@@ -29,7 +29,17 @@ class NewVisitorTest(unittest.TestCase):
     def test_home_page(self):
         """
 
-        Put your description of the purpose of your web site here.
+        This project is about the Moon Landing conspiracy and the effect of politics,
+        media, citizen relationship, and public perception. American political conspiracies,
+        in particular, the Moon Landing of 1969, distort the framework of public perception
+        and citizen relations. This project examines conspiracy theory by breaking down the
+        power of its political effect, specifically the morals and the hierarchical system
+        of politics. Observing the media’s play on this conspiracy and the political effect
+        it had through the 1970’s, reveals a new relationship between the media and the public.
+        Because media had become televised, the concept of conspiracy as a social phenomenon
+        became more intrinsically tied to the media’s capacity to re-present reality. This ties
+        in with the entire fiction generating apparatus of Hollywood, an industry driven on
+        special effects and illusions. 
 
         """
 
@@ -38,7 +48,7 @@ class NewVisitorTest(unittest.TestCase):
         # there is a page title defined by <title></title> on the home page
         # check it
 
-        self.assertIn('The Title of my Web Site',self.browser.title)
+        self.assertIn("Conspiracy’s Effect on American Ideology",self.browser.title)
 
         # You will have an image for your home page I am assuming.
         # Put the name of your image here in place of homebrew.png
@@ -52,7 +62,7 @@ class NewVisitorTest(unittest.TestCase):
         # put your title in place of "The Title of My Home Page"
 
         h=self.browser.find_element_by_css_selector('h1')
-        self.assertIn("The Title of My Home Page",h.text)
+        self.assertIn("Conspiracy’s Effect on American Ideology",h.text)
 
         # There is an area specified around the computer keyboard.
         # the 'id' of this area is 'keyboard'
